@@ -1,0 +1,3 @@
+def endpoint():
+    return "ok"
+

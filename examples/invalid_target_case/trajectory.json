@@ -1,0 +1,18 @@
+{
+  "issue": "The repair agent attempted to validate a math utility fix but used a stale test target name.",
+  "tool_calls": [
+    {
+      "role": "verifier",
+      "command": "python -m pytest tests/test_math.py::test_add_numbers",
+      "status": "failed",
+      "summary": "Pytest could not collect the requested target."
+    },
+    {
+      "role": "patcher",
+      "command": "edit math_utils.py",
+      "status": "skipped",
+      "summary": "The agent considered editing source before proving that the target test exists."
+    }
+  ]
+}
+

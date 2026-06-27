@@ -1,0 +1,13 @@
+diff --git a/tests/test_widget.py b/tests/test_widget.py
+--- a/tests/test_widget.py
++++ b/tests/test_widget.py
+@@ -1,7 +1,7 @@
+ from widget import normalize
+ 
+ 
+ def test_normalize_none():
+-    assert normalize(None) == "unknown"
++    assert normalize(None) == "missing"
+ 
+ 
+ def test_normalize_text():

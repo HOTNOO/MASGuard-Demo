@@ -1,0 +1,9 @@
+diff --git a/widget.py b/widget.py
+--- a/widget.py
++++ b/widget.py
+@@ -1,4 +1,4 @@
+ def normalize(value):
+     if value is None:
+-        return ""
++        return "unknown"
+     return str(value).strip().lower()

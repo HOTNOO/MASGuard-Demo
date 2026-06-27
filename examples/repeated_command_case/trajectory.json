@@ -1,0 +1,18 @@
+{
+  "issue": "The repair agent repeated a timing-out validation command instead of checkpointing and reducing evidence.",
+  "tool_calls": [
+    {
+      "role": "verifier",
+      "command": "python -m pytest tests/test_service.py --runslow",
+      "status": "timeout",
+      "summary": "The integration validation timed out."
+    },
+    {
+      "role": "verifier",
+      "command": "python -m pytest tests/test_service.py --runslow",
+      "status": "timeout",
+      "summary": "The agent repeated the same timeout without changing evidence or target scope."
+    }
+  ]
+}
+

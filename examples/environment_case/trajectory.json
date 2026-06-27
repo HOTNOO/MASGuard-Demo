@@ -1,0 +1,18 @@
+{
+  "issue": "The repair agent failed before mutation because the validation environment missed a dependency.",
+  "tool_calls": [
+    {
+      "role": "verifier",
+      "command": "python -m pytest tests/test_config_loader.py",
+      "status": "failed",
+      "summary": "Collection failed before executing the test body."
+    },
+    {
+      "role": "controller",
+      "command": "ask model for source patch",
+      "status": "skipped",
+      "summary": "A code edit would be premature because the failure is infrastructure-level."
+    }
+  ]
+}
+

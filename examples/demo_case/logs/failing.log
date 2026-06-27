@@ -1,0 +1,8 @@
+FAILED tests/test_widget.py::test_normalize_none - AssertionError
+Traceback (most recent call last):
+  File "tests/test_widget.py", line 4, in test_normalize_none
+    assert normalize(None) == "unknown"
+  File "widget.py", line 3, in normalize
+    return ""
+AssertionError: expected normalize(None) to return "unknown"
+

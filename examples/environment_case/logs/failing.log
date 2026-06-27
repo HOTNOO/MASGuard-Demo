@@ -1,0 +1,8 @@
+ERROR collecting tests/test_config_loader.py
+Traceback (most recent call last):
+  File "tests/test_config_loader.py", line 1, in <module>
+    from config_loader import load_config
+  File "config_loader.py", line 1, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
+

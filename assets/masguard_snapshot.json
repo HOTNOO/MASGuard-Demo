@@ -1,0 +1,14 @@
+{
+  "schema": "masguard.snapshot.v1",
+  "source_timestamp": "2026-06-22 22:56 +0800",
+  "source_of_truth": "packaged experiment records",
+  "metrics": {
+    "MASGuard all69 execution evidence": "31/69",
+    "Reflexion-k all69 baseline": "11/69",
+    "fixed source-only all69 baseline": "10/69",
+    "target101/full13 MASGuard": "12/13 strict + 1 no-credit",
+    "target101/full13 mini-swe-agent": "5/13 strict"
+  },
+  "scope_note": "The snapshot records experiment evidence. Re-run commands and per-case records are distributed separately from the installable CLI.",
+  "demo_message": "MASGuard packages failure evidence, diagnosis, and recovery control for failed MAS software-repair runs."
+}

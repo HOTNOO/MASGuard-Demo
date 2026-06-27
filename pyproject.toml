@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "masguard"
+version = "0.1.0"
+description = "A Tool Demo prototype for diagnosing and recovering failed multi-agent software-repair attempts."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "MASGuard Authors"}
+]
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+masguard = "recoveragent.cli:main"
+recoveragent = "recoveragent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
